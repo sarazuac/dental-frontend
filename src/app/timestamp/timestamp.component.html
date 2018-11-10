@@ -1,0 +1,11 @@
+<div class="row">
+  <div class="col-md-1">{{ timestamp.user_id }}</div>
+  <div class="col-md-2">{{ timestamp.clocked_in_at }}</div>
+  <div class="col-md-2">{{ timestamp.lunch_in_at }}</div>
+  <div class="col-md-2">{{ timestamp.lunch_out_at }}</div>
+  <div class="col-md-2">{{ timestamp.clocked_out_at }}</div>
+  <div class="col-md-3">
+    <div *ngIf="editing"><a href="#">Save</a> <a href="#">Cancel</a></div>
+    <div *ngIf="!editing"><a href="#">Edit</a> <a href="#">Delete</a></div>
+  </div>
+</div>

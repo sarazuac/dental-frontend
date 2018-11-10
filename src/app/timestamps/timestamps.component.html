@@ -1,0 +1,15 @@
+<button class="btn btn-primary" (click)="onGetTimestamps()">
+  Get Timestamps
+</button>
+<hr />
+<div class="row">
+  <div class="col-md-1">User ID</div>
+  <div class="col-md-2">Clocked In</div>
+  <div class="col-md-2">Went to Lunch at</div>
+  <div class="col-md-2">Back from Lunch at</div>
+  <div class="col-md-2">Clocked Out</div>
+</div>
+<app-timestamp
+  *ngFor="let timestamp of timestamps"
+  [timestamp]="timestamp"
+></app-timestamp>
